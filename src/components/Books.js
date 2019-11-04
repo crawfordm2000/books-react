@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SearchBar from "./SearchBar";
 import axios from "axios";
+import Gallery from './Gallery';
 
 class Books extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class Books extends Component {
     .then(response => {
         // you will want to change the state of the books array here
         this.setState({ books: response.data.items})
-            console.log(response.data.items);
+            // console.log(response.data.items);
     })
     .catch(() => {
         console.log("Something went wrong");
@@ -37,6 +38,7 @@ class Books extends Component {
     return (
       <div>
         <SearchBar searchInput={this.searchInput} getBooks={this.getBooks} />
+        <Gallery books={this.state.books}/>
       </div>
     );
   }
