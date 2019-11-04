@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import SearchBar from "./SearchBar";
 import axios from "axios";
-//import request from "superagent";
 
 class Books extends Component {
   constructor(props) {
