@@ -25,7 +25,7 @@ class Books extends Component {
         console.log(response.data.items);
     })
     .catch(() => {
-        console.log("Something went wrong");
+        return <div>NO RESULTS WERE FOUND</div>
     })
 }
 

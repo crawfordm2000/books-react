@@ -28,7 +28,7 @@ h1::first-letter {
 .gallery {
   width: 90%;
   margin: 0 auto;
-  height: 100em; 
+  /* height: 100em;  */
   margin-top: 1em;
   background: #fffefe;
   display: flex;
@@ -39,15 +39,24 @@ h1::first-letter {
 }
 
 .bookCard {
-  height: 15%;
-  width: 20%;
+  height: 20%;
+  /* width: 20%; */
   background: #bebebe;
   border: 1px solid red;
   margin-top: 5em;;
   font-family: sans-serif;
   font-size: .7em;
+  text-align: center;
+ 
 }
 
 .image {
   display: block;
+  height: 200px;
+  width: 150px;
+}
+
+.authors,
+.title {
+  width: 150px;
 }
