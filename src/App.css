@@ -40,7 +40,7 @@ h1::first-letter {
 
 .bookCard {
   height: 15%;
-  width: 40%;
+  width: 20%;
   background: #bebebe;
   border: 1px solid red;
   margin-top: 5em;;
@@ -48,3 +48,6 @@ h1::first-letter {
   font-size: .7em;
 }
 
+.image {
+  display: block;
+}

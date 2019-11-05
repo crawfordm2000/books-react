@@ -6,7 +6,10 @@ const Gallery = props => {
     const bookResults = props.books.map((book, index) => {
       return (
         <div key={index} className="bookCard">
-          <span className="title">Title: {book.volumeInfo.title}</span>
+        <img className="image" src={book.volumeInfo.imageLinks.thumbnail} alt="bookThumbnail" />
+        <span className="title">Title: {book.volumeInfo.title}</span>
+        <a target="_blank" href={book.volumeInfo.previewLink}>link</a>
+          
         </div>
       );
     });

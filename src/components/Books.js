@@ -22,7 +22,7 @@ class Books extends Component {
     .then(response => {
         // you will want to change the state of the books array here
         this.setState({ books: response.data.items})
-            // console.log(response.data.items);
+        console.log(response.data.items);
     })
     .catch(() => {
         console.log("Something went wrong");
