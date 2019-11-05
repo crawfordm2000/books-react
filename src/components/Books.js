@@ -15,7 +15,7 @@ class Books extends Component {
 
   getBooks = (e) => {
     e.preventDefault();
-    axios.request ({
+    axios ({
         url: 'https://www.googleapis.com/books/v1/volumes?q=' + this.state.searchText,
         method: 'get',
     })
@@ -25,7 +25,7 @@ class Books extends Component {
         console.log(response.data.items);
     })
     .catch(() => {
-        return <div>NO RESULTS WERE FOUND</div>
+        console.log('nothing was returned')
     })
 }
 
@@ -36,10 +36,10 @@ class Books extends Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <SearchBar searchInput={this.searchInput} getBooks={this.getBooks} />
         <Gallery books={this.state.books}/>
-      </div>
+      </React.Fragment>
     );
   }
 }

@@ -7,10 +7,17 @@ const Gallery = props => {
     const bookResults = props.books.map((book, index) => {
       return (
         <div key={index} className="bookCard">
-            <img className="image" src={book.volumeInfo.imageLinks.thumbnail} alt="bookThumbnail" />
-            <p className="title"><b>{book.volumeInfo.title}</b></p>
-            <p className="authors">By: {book.volumeInfo.authors}</p>
-            <a target="_blank" href={book.volumeInfo.previewLink}>preview</a>
+          <a target="_blank" href={book.volumeInfo.previewLink}>
+            <img
+              className="image"
+              src={book.volumeInfo.imageLinks ?  book.volumeInfo.imageLinks.thumbnail : `../images/brokenImg.png`}
+              alt="bookThumbnail"
+            />
+          </a>
+          <p className="title">
+            <b>{book.volumeInfo.title}</b>
+          </p>
+          <p className="authors">By: {book.volumeInfo.authors}</p>
         </div>
       );
     });
@@ -18,11 +25,7 @@ const Gallery = props => {
     return bookResults;
   };
 
- 
-    return <div className="gallery">{bookList()}</div>;
- 
-
-  
+  return <div className="gallery">{bookList()}</div>;
 };
 
 export default Gallery;
