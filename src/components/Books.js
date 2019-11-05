@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import SearchBar from "./SearchBar";
 import axios from "axios";
 import Gallery from './Gallery';
+import Bookshelf from './Bookshelf';
 
 class Books extends Component {
   constructor(props) {
@@ -29,7 +30,6 @@ class Books extends Component {
     })
 }
 
-
   searchInput = e => {
     this.setState({ searchText: e.target.value });
   };
@@ -38,6 +38,7 @@ class Books extends Component {
     return (
       <React.Fragment>
         <SearchBar searchInput={this.searchInput} getBooks={this.getBooks} />
+        <Bookshelf></Bookshelf>
         <Gallery books={this.state.books}/>
       </React.Fragment>
     );

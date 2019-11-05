@@ -10,7 +10,7 @@ const Gallery = props => {
           <a target="_blank" href={book.volumeInfo.previewLink}>
             <img
               className="image"
-              src={book.volumeInfo.imageLinks ?  book.volumeInfo.imageLinks.thumbnail : `../images/brokenImg.png`}
+              src={book.volumeInfo.imageLinks ?  book.volumeInfo.imageLinks.thumbnail : '../images/brokenImg.png'}
               alt="bookThumbnail"
             />
           </a>
@@ -18,6 +18,7 @@ const Gallery = props => {
             <b>{book.volumeInfo.title}</b>
           </p>
           <p className="authors">By: {book.volumeInfo.authors}</p>
+          <button className="bookshelf">Bookshelf</button>
         </div>
       );
     });

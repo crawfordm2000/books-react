@@ -24,6 +24,8 @@ h1::first-letter {
 
 .search {
   margin-top: 1em;
+  display: inline-block;
+  margin-right: 1em;
 }
 
 .gallery {
@@ -50,6 +52,7 @@ h1::first-letter {
   font-family: sans-serif;
   font-size: .7em;
   text-align: center;
+  border-radius: 10px;
  
 }
 
@@ -57,6 +60,7 @@ h1::first-letter {
   display: block;
   height: 225px;
   width: 175px;
+  border-radius: 10px;
 }
 
 .authors,
@@ -69,6 +73,14 @@ h1::first-letter {
   margin-top: -8px;
 }
 
-.root {
-  background-image: url(./images/Ash.png);
+.bookshelf {
+  background-color: rgb(251, 89, 89);
+  color: #f4f4f4;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.bookShelf {
+  display: inline-block;
 }
