@@ -5,7 +5,7 @@ const SearchBar = (props) => {
   
     <div className="search">
       <form className="search-bar" onSubmit={props.getBooks} >
-        <input onChange={props.searchInput} placeholder="search books" type="text" />
+        <input className="input-field" onChange={props.searchInput} placeholder="search books" type="text" />
         <button type="submit" className="searchButton">Search</button>
       </form>
     </div>
