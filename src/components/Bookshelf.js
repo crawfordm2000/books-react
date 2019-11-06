@@ -19,7 +19,7 @@ const Bookshelf = props => {
             <b>{book.volumeInfo.title}</b>
           </p>
           <p className="authors">{book.volumeInfo.authors}</p>
-          <button className="bookshelf" onClick={()=> props.click(book)}>Remove</button>
+          <button className="bookshelf" onClick={()=> props.click(index)}>Remove</button>
         </div>
       );
     });

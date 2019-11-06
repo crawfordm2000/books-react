@@ -21,9 +21,9 @@ class Books extends Component {
     return this.setState({ faveBooks: this.pArray });
   };
 
-  removeFave = book => {
-    this.pArray.pop(book);
-    return this.setState({ faveBooks: this.pArray})
+  removeFave = (key) => {
+    this.pArray.splice(key, 1);
+    return this.setState({ faveBooks: this.pArray});
   }
 
   getBooks = e => {
@@ -35,7 +35,7 @@ class Books extends Component {
       method: "get"
     })
       .then(response => {
-        console.log(response)
+        //console.log(response)
         // you will want to change the state of the books array here
         this.setState({ books: response.data.items });
         //console.log(response.data.items);
