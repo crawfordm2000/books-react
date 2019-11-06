@@ -17,7 +17,7 @@ const Gallery = props => {
           <p className="title">
             <b>{book.volumeInfo.title}</b>
           </p>
-          <p className="authors">By: {book.volumeInfo.authors}</p>
+          <p className="authors">{book.volumeInfo.authors}</p>
           <button className="bookshelf">Bookshelf</button>
         </div>
       );

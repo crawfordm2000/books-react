@@ -4,7 +4,7 @@ class Bookshelf extends Component {
     state = {  }
     render() { 
         return (  
-            <button className="bookShelf">Bookshelf</button>
+            <button className="library">Library</button>
         );
     }
 }
