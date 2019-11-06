@@ -107,6 +107,18 @@ h1::first-letter {
   
 }
 
-.library {
-  display: inline-block;
+.about-btn {
+  border-radius: 5px;
+  background: #586381;
+  color: #FFEFBA;
+}
+
+.link {
+  color: #FFEFBA;
+  font-size: 12px;
+  padding: 3px;
+  background-image: url(./images/Ash.png);
+  margin-right: 1em;
+  text-decoration: none;
+  border-radius: 5px;
 }
