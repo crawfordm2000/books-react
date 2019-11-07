@@ -55,8 +55,8 @@ class Books extends Component {
       <Router>
         <React.Fragment>
           <SearchBar searchInput={this.searchInput} getBooks={this.getBooks} />
-          <Link className="link" to='/bookshelf'>Bookshelf</Link>
-          <Link className="link" to='/'>Home</Link>
+          <Link className="link zoom" to='/bookshelf'>Bookshelf</Link>
+          <Link className="link zoom" to='/'>Home</Link>
           <Route
             exact
             path="/"

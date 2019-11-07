@@ -10,7 +10,7 @@ const Gallery = props => {
         <div key={index} className="bookCard">
           <a target="_blank" rel="noopener noreferrer" href={book.volumeInfo.previewLink}>
             <img
-              className="image"
+              className="image zoom"
               src={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : '../images/brokenImg.png'}
               alt="bookThumbnail"
             />

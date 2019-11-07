@@ -50,7 +50,7 @@ h1::first-letter {
   width: 90%;
   margin: 0 auto;
   /* height: 100em;  */
-  margin-top: 1em;
+  /* margin-top: 1em; */
   background: rgb(255, 245, 212);
   display: flex;
   flex-wrap: wrap;
@@ -63,7 +63,7 @@ h1::first-letter {
 .bookCard {
   /* height: 20%;
   width: 15%; */
-  background: #586381;
+  background: #636e8d;
   /* border: 1px solid red; */
   margin-top: 1em;
   margin-bottom: 1em;;
@@ -102,7 +102,7 @@ h1::first-letter {
 
 .bookshelf {
   background-color: rgb(251, 89, 89);
-  color: #DFD4AE;
+  color: #f4f4f4;
   border: none;
   border-radius: 5px;
   
@@ -123,4 +123,14 @@ h1::first-letter {
   text-decoration: none;
   border-radius: 5px;
   font-family: sans-serif;
+}
+
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
