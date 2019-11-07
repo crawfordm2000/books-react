@@ -21,8 +21,8 @@ class Books extends Component {
     return this.setState({ faveBooks: this.pArray });
   };
 
-  removeFave = (key) => {
-    this.pArray.splice(key, 1);
+  removeFave = (index) => {
+    this.pArray.splice(index, 1);
     return this.setState({ faveBooks: this.pArray});
   }
 
@@ -55,8 +55,8 @@ class Books extends Component {
       <Router>
         <React.Fragment>
           <SearchBar searchInput={this.searchInput} getBooks={this.getBooks} />
-          <Link className="link" to='/'>Home</Link>
           <Link className="link" to='/bookshelf'>Bookshelf</Link>
+          <Link className="link" to='/'>Home</Link>
           <Route
             exact
             path="/"

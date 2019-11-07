@@ -19,7 +19,7 @@ const Gallery = props => {
             <b>{book.volumeInfo.title}</b>
           </p>
           <p className="authors">{book.volumeInfo.authors}</p>
-          <button key={index} onClick={()=> props.click(book)} className="bookshelf">Bookshelf</button>
+          <button key={index} onClick={()=> props.click(book)} className="bookshelf">Add to shelf</button>
         </div>
       );
     });

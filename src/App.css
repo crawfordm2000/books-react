@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  background: #FFEFBA;
+  background:  rgb(255, 245, 212);
   text-align: center;
 }
 
@@ -51,7 +51,7 @@ h1::first-letter {
   margin: 0 auto;
   /* height: 100em;  */
   margin-top: 1em;
-  background: #FFEFBA;
+  background: rgb(255, 245, 212);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -116,10 +116,11 @@ h1::first-letter {
 
 .link {
   color: #FFEFBA;
-  font-size: 12px;
+  font-size: 10px;
   padding: 3px;
   background-image: url(./images/Ash.png);
   margin-right: 1em;
   text-decoration: none;
   border-radius: 5px;
+  font-family: sans-serif;
 }
