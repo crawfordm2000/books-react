@@ -1,2 +1,2 @@
 
-![wireframe](src/images/wirefram.png?raw=true "WireFrame")
+![wireframe](src/images/wireframe.png?raw=true "WireFrame")
