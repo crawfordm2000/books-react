@@ -1,4 +1,4 @@
-This is my first project using the React library. It is a small project limited in its use of state, props, routes, and components. This was intentional because I wanted to create a functional app that works as it was designed and to build off this experience before attempting more ambitious projects in the future. This app uses the Google Books API to return queries entered into the search field. Currently, the app will only return ten results no matter what is searched. Being my first experience with APIs as well, I found this limitation more of a blessing than a constraint. 
+This is my first project using the React library. It is a small project, limited in its use of state, props, routes, and components. This was intentional because I wanted to create a functional app that works as it was designed and to build off this experience before attempting more ambitious projects in the future. This app uses the Google Books API to return queries entered into the search field. Currently, the app will return ten results no matter what is searched. 
 
 
 User Instructions:

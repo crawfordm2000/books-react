@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar";
 import axios from "axios";
 import Gallery from "./Gallery";
 import Bookshelf from "./Bookshelf";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Link } from "react-router-dom";
 
 
 class Books extends Component {
@@ -53,7 +53,7 @@ class Books extends Component {
   render() {
     console.log(this.state);
     return (
-      <Router>
+      <Router basename='/'>
         <React.Fragment>
           <SearchBar searchInput={this.searchInput} getBooks={this.getBooks} />
           <Link className="link zoom" to='/bookshelf'>Bookshelf</Link>
